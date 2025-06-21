@@ -24,7 +24,7 @@ const projects = [
   category: "Frontend",
   icon: <Globe className="w-5 h-5" />,
   gradient: "from-indigo-600 to-pink-500",
-  liveUrl: "https://anmol-portfolio-69xjc4wlm-anmols-projects-b8b2717a.vercel.app/", // Update to your actual live portfolio URL
+  liveUrl: "https://anmol-portfolio-zeta.vercel.app/", // Update to your actual live portfolio URL
   githubUrl: "https://github.com/Anmol283/Anmol-Portfolio"
   },
   {
