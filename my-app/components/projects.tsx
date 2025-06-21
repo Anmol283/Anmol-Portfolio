@@ -16,7 +16,19 @@ const ProjectsSection = () => {
 
 const projects = [
   {
-    id: 1,
+  id: 1,
+  title: "Anmol-Portfolio",
+  description: "A visually rich, fully responsive personal portfolio built with Next.js, Tailwind CSS, Framer Motion, and EmailJS to showcase my skills, projects, and journey.",
+  image: "/projects/Portfolio.png", // Update this to your actual portfolio image path
+  tags: ["nextjs", "tailwindcss", "framer-motion", "emailjs"],
+  category: "Frontend",
+  icon: <Globe className="w-5 h-5" />,
+  gradient: "from-indigo-600 to-pink-500",
+  liveUrl: "https://anmol-portfolio-69xjc4wlm-anmols-projects-b8b2717a.vercel.app/", // Update to your actual live portfolio URL
+  githubUrl: "https://github.com/Anmol283/Anmol-Portfolio"
+  },
+  {
+    id: 2,
     title: "Elara Regency",
     description: "A full-stack hotel management platform built with Node.js, Express, MongoDB, and EJS.",
     image: "/projects/ElaraRegency.png", // Updated path
@@ -28,7 +40,7 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/BE_ElaraRegency"
   },
   {
-    id: 2,
+    id: 3,
     title: "PolyVerse - A Translator App",
     description: "Translate across 12+ languages with smart history and a sleek dark UI.",
     image: "/projects/polyverse.png", // Fixed path
@@ -40,7 +52,7 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/PolyVerse-A-translator-app"
   },
   {
-    id: 3,
+    id: 4,
     title: "Playlist Management System",
     description: "Console-based Java app to create, edit, and manage your music playlists.",
     image: "/projects/PMS.png", // Fixed path
@@ -52,7 +64,7 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/PlaylistManagementSystem"
   },
   {
-    id: 4,
+    id: 5,
     title: "OptiFlow",
     description: "A smart task manager with real-time syncing, modern UI, and seamless flow.",
     image: "/projects/optiflow.png", // Fixed path
@@ -64,7 +76,7 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/OptiFlow"
   },
   {
-    id: 5,
+    id: 6,
     title: "Digital Clock & Weather App",
     description: "Track time and weather instantly with a beautiful, minimal web UI.",
     image: "/projects/Digital_clock_and_weather.png", // Fixed path
@@ -76,7 +88,7 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/Digital-clock-and-Weather-App"
   },
   {
-    id: 6,
+    id: 7,
     title: "Library Management System",
     description: "Efficiently manage physical & digital books with DevOps best practices.",
     image: "/projects/LMS.png", // Fixed path
@@ -86,7 +98,8 @@ const projects = [
     gradient: "from-yellow-600 to-orange-600",
     liveUrl: "#",
     githubUrl: "https://github.com/Anmol283/Library_Management_System_Cpp"
-  }
+  },
+  
 ];
 
   const itemsPerView = 3;
