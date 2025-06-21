@@ -1,0 +1,34 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@tailwindcss/postcss": "^4.1.10",
+    "@types/node": "24.0.1",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "autoprefixer": "10.4.21",
+    "emailjs-com": "^3.2.0",
+    "eslint": "9.29.0",
+    "eslint-config-next": "15.3.3",
+    "next": "15.3.3",
+    "postcss": "8.5.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-parallax-tilt": "^1.7.298",
+    "react-tsparticles": "^2.12.2",
+    "tailwindcss": "^3.4.3",
+    "tsparticles": "^3.8.1",
+    "typescript": "5.8.3"
+  }
+}
