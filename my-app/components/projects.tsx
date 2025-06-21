@@ -7,12 +7,12 @@ import SectionBackground from './SectionBackground';
 import { LayoutTemplate } from "lucide-react";
 
 const ProjectsSection = () => {
-  const [hoveredProject, setHoveredProject] = useState(null);
+  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
-  const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
 const projects = [
   {
@@ -92,18 +92,24 @@ const projects = [
   const itemsPerView = 3;
   const maxIndex = Math.max(0, projects.length - itemsPerView);
 
-  const handleDragStart = (e) => {
+  const handleDragStart = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
     setIsDragging(true);
-    const clientX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+    const clientX = e.type === 'mousedown' 
+      ? (e as React.MouseEvent<HTMLDivElement>).clientX 
+      : (e as React.TouchEvent<HTMLDivElement>).touches[0].clientX;
     setStartX(clientX);
-    setScrollLeft(scrollContainerRef.current.scrollLeft);
+    if (scrollContainerRef.current) {
+      setScrollLeft(scrollContainerRef.current.scrollLeft);
+    }
   };
 
-  const handleDragMove = (e) => {
+  const handleDragMove = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
     if (!isDragging) return;
     e.preventDefault();
     
-    const clientX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+    const clientX = e.type === 'mousemove' 
+      ? (e as React.MouseEvent<HTMLDivElement>).clientX 
+      : (e as React.TouchEvent<HTMLDivElement>).touches[0].clientX;
     const x = clientX;
     const walk = (x - startX) * 2;
     
@@ -112,11 +118,13 @@ const projects = [
     }
   };
 
-  const handleDragEnd = (e) => {
+  const handleDragEnd = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
     if (!isDragging) return;
     setIsDragging(false);
     
-    const clientX = e.type === 'mouseup' ? e.clientX : e.changedTouches[0].clientX;
+    const clientX = e.type === 'mouseup' 
+      ? (e as React.MouseEvent<HTMLDivElement>).clientX 
+      : (e as React.TouchEvent<HTMLDivElement>).changedTouches[0].clientX;
     const dragDistance = clientX - startX;
     const threshold = 100;
     
@@ -137,7 +145,7 @@ const projects = [
     setCurrentIndex(prev => Math.min(maxIndex, prev + 1));
   };
 
-  const goToSlide = (index) => {
+  const goToSlide = (index: number) => {
     setCurrentIndex(Math.max(0, Math.min(maxIndex, index)));
   };
 
@@ -283,8 +291,11 @@ const projects = [
                           }}
                           onError={(e) => {
                             // Fallback to gradient background if image fails to load
-                            e.target.style.display = 'none';
-                            e.target.parentElement.style.background = `linear-gradient(to bottom right, ${project.gradient.replace('from-', '').replace('to-', '').replace(' ', ', ')})`;
+                            const target = e.target as HTMLImageElement;
+                            target.style.display = 'none';
+                            if (target.parentElement) {
+                              target.parentElement.style.background = `linear-gradient(to bottom right, ${project.gradient.replace('from-', '').replace('to-', '').replace(' ', ', ')})`;
+                            }
                           }}
                         />
                         {/* Gradient overlay */}
