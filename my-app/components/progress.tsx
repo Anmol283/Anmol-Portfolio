@@ -4,7 +4,7 @@ import { Layers } from 'lucide-react';
 import SectionBackground from './SectionBackground';
 
 const Progress = () => {
-  const [hoveredTech, setHoveredTech] = useState(null);
+  const [hoveredTech, setHoveredTech] = useState<number | null>(null);
 
   const techStack = [
     {
