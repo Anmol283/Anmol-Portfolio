@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import SectionBackground from "./SectionBackground";
 
 const navItems = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "journey", label: "Journey" },
+  { id: "tools", label: "Tools & Skills" },
   { id: "projects", label: "Projects" },
   { id: "achievements", label: "Achievements" },
   { id: "contact", label: "Contact" },
@@ -65,7 +66,6 @@ const scrollToSection = (sectionId: string) => {
   return (
     <>
     <nav className="absolute top-6 left-0 z-50 w-full bg-black/90 text-white shadow-md">
-
        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
          <div className="flex items-center justify-center h-16">
             {/* Desktop Nav */}

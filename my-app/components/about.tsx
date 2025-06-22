@@ -30,7 +30,6 @@ export default function About() {
             </h2>
 
             {/* About Paragraph */}
-            <code className="text-sm sm:text-base text-gray-400 font-mono bg-white/10 px-4 py-2 rounded-md shadow-inner inline-block animate-fade-in">
             <div className="flex flex-wrap gap-3">
               {["Inquisitive Coder", "Creative Thinker", "Tech Explorer"].map(
                 (tag) => (
@@ -43,6 +42,8 @@ export default function About() {
                 )
               )}
             </div>
+            <code className="text-sm sm:text-base text-gray-400 font-mono bg-white/10 px-4 py-2 rounded-md shadow-inner inline-block animate-fade-in">
+            
             <br/>
            I'm a third-year Computer Science Engineering student at Chitkara University, driven by a passion for web development & problem-solving.
               <br />
@@ -51,14 +52,14 @@ export default function About() {
               <br />
               <br/>
               I thrive on turning ideas into reality and enjoy every step of the development process.
+              <br/>
+              <br/>
           </code>
-            {/* <p className="text-lg leading-relaxed animate-fade-in-delayed">
-              I'm a third-year Computer Science Engineering student at Chitkara University, driven by a passion for web development and creative problem-solving.
-              <br />
-              As a full-stack developer, I specialize in crafting seamless digital experiences, from intuitive user interfaces to efficient, scalable backends.
-              <br />
-              I thrive on turning ideas into reality and enjoy every step of the development process.
-            </p> */}
+          <p className="text-sm sm:text-base text-muted-foreground">
+               🎓 <strong>CGPA:</strong> 9.25 &nbsp;|&nbsp; <strong>12th:</strong> 91% &nbsp;|&nbsp; <strong>10th:</strong> 94%
+          </p>
+
+
           </div>
 
           {/* Profile Image Section */}

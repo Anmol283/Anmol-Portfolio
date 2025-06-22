@@ -59,12 +59,9 @@ const journeyData = [
   },
 ];
 
-export default function Journey(){
+export default function Tools(){
   return(
- <section
-  id="journey"
-  className="scroll-mt-24 pt-10 min-h-[60vh] py-20 px-6 bg-black/90 relative overflow-hidden"
->
+ <section id="tools"className="scroll-mt-24 pt-10 min-h-[60vh] py-20 px-6 bg-black/90 relative overflow-hidden">
   {/* Background Canvas */}
   <SectionBackground />
 
@@ -72,7 +69,7 @@ export default function Journey(){
   <div className="relative z-10">
     <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-purple-400 animate-fade-in mb-4 flex items-center justify-center gap-3 pb-6">
       <Code className="h-8 w-8 text-pink-300" />
-      Journey
+      Tools & Skills
     </h2>
     <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto text-center mb-12">
       Consistent learner. Passionate tech explorer.
@@ -80,20 +77,20 @@ export default function Journey(){
   </div>
 
       {/* Stats Row - Redesigned with glassmorphism */}
-<div className="flex flex-wrap justify-center gap-8 px-4 mb-16">
+  <div className="flex flex-wrap justify-center gap-8 px-4 mb-16">
   {[
     { label: 'Learning Hours', value: '1200+', textColor: 'text-indigo-400' },
     { label: 'Projects Built', value: '7+', textColor: 'text-pink-400' },
-    { label: 'Lines of Code', value: '15k+', textColor: 'text-green-400' },
-    { label: 'Contributions', value: '142+', textColor: 'text-yellow-400' },
+    { label: 'Leetcode Questions', value: '150+', textColor: 'text-green-400' },
+    { label: 'Technologies Learnt', value: '10+', textColor: 'text-yellow-400' },
   ].map((stat, index) => (
     <div
       key={index}
-      className="group w-[220px] p-6 bg-gray-900/60 backdrop-blur-lg border border-gray-700/50 rounded-2xl shadow-xl transition-all duration-500 hover:shadow-2xl hover:scale-105 hover:bg-gray-800/60 hover:border-gray-600/50"
+      className="group w-[220px] p-6 bg-gray-900/60 backdrop-blur-lg border border-gray-700/50 text-center rounded-2xl shadow-xl transition-all duration-500 hover:shadow-2xl hover:scale-105 hover:bg-gray-800/60 hover:border-gray-600/50"
     >
       <div className="text-sm text-gray-400 mb-2 font-medium tracking-wide">{stat.label}</div>
       <div
-        className={`text-3xl font-bold ${stat.textColor} group-hover:text-white transition-all duration-300`}
+        className={`text-3xl font-bold ${stat.textColor} group-hover:text-white transition-all duration-300 text-center`}
       >
         {stat.value}
       </div>
