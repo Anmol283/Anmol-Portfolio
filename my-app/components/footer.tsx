@@ -27,12 +27,9 @@ const Footer = () => {
 
 
   return (
-  <footer className="relative w-full bg-black/90 text-white py-16 -mt-px overflow-hidden">
-
+  <footer className="relative w-full bg-black/90 text-white py-16 overflow-hidden">
 
         <SectionBackground/>
- 
-
       {/* Cursor Glow Effect */}
       <div
         className="absolute pointer-events-none opacity-20 transition-opacity duration-300"

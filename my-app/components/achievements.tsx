@@ -29,13 +29,6 @@ export default function Achievements() {
         "Collaborated on a real-time IoT project focused on health monitoring and GPS tracking.",
       image: "/achievements/IOT.png",
     },
-    {
-      icon: "🏅",
-      title: "Other Recognitions",
-      description:
-        "Scored 100/100 in Data Structures, received Chancellor’s Carva recognition, participated in my first hackathon, and completed a hands-on iOS Specialization Bootcamp under Apple Innovation.",
-      image: "/achievements/misc.png",
-    },
   ];
 
   return (
