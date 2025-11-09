@@ -21,7 +21,7 @@ const projects = [
   description: "A visually rich, fully responsive personal portfolio built with Next.js, Tailwind CSS, Framer Motion, and EmailJS to showcase my skills, projects, and journey.",
   image: "/projects/Portfolio.png", // Update this to your actual portfolio image path
   tags: ["nextjs", "tailwindcss", "framer-motion", "emailjs"],
-  category: "Frontend",
+  category: "Full Stack",
   icon: <Globe className="w-5 h-5" />,
   gradient: "from-indigo-600 to-pink-500",
   liveUrl: "https://anmol-portfolio-zeta.vercel.app/", // Update to your actual live portfolio URL
@@ -34,13 +34,49 @@ const projects = [
     image: "/projects/ElaraRegency.png", // Updated path
     tags: ["express", "ejs", "mongodb-atlas"],
     category: "Full Stack",
-    icon: <Globe className="w-5 h-5" />,
+    icon: <Database className="w-5 h-5" />,
     gradient: "from-blue-600 to-purple-600",
     liveUrl: "https://be-elararegency.onrender.com",
     githubUrl: "https://github.com/Anmol283/BE_ElaraRegency"
   },
   {
     id: 3,
+    title: "E-commerce Mini Store",
+    description: "Mini e-commerce app built with Spring Boot microservices & Java, featuring JWT auth, MySQL, and REST APIs for products, cart, and orders.",
+    image: "/projects/ecms.png", 
+    tags: ["spring-boot", "microservices", "jwt"],
+    category: "Backend Development",
+    icon: <Code2 className="w-5 h-5" />,
+    gradient: "from-blue-600 to-purple-600",
+    // liveUrl: "#", 
+    githubUrl: "https://github.com/Anmol283/E-commerceMiniStore"
+  },   
+  {
+    id: 4,
+    title: "Clean Space Dashboard",
+    description: "Terminal-based file organizer and disk monitor with dialog UI, alerts, and real-time stats for Linux users.",
+    image: "/projects/csd.jpeg", // needs change
+    tags: ["bash", "linux", "shell-scripting"],
+    category: "Command Line Tools",
+    icon: <Code2 className="w-5 h-5" />,
+    gradient: "from-blue-600 to-purple-600",
+    // liveUrl: "#",
+    githubUrl: "https://github.com/Anmol283/Clean-Space-Dashboard-Linux"
+  },
+  {
+    id: 5,
+    title: "Playlist Management System",
+    description: "Console-based Java app to create, edit, and manage your music playlists.",
+    image: "/projects/PMS.png", // Fixed path
+    tags: ["java", "linkedlist", "dsa"],
+    category: "DSA & Java Projects",
+    icon: <Code className="w-5 h-5" />,
+    gradient: "from-orange-600 to-red-600",
+    // liveUrl: "#",
+    githubUrl: "https://github.com/Anmol283/PlaylistManagementSystem"
+  },
+   {
+    id: 6,
     title: "PolyVerse - A Translator App",
     description: "Translate across 12+ languages with smart history and a sleek dark UI.",
     image: "/projects/polyverse.png", // Fixed path
@@ -52,56 +88,55 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/PolyVerse-A-translator-app"
   },
   {
-    id: 4,
-    title: "Playlist Management System",
-    description: "Console-based Java app to create, edit, and manage your music playlists.",
-    image: "/projects/PMS.png", // Fixed path
-    tags: ["java", "linkedlist", "dsa"],
-    category: "DSA & Java Projects",
-    icon: <Shield className="w-5 h-5" />,
-    gradient: "from-orange-600 to-red-600",
-    liveUrl: "#",
-    githubUrl: "https://github.com/Anmol283/PlaylistManagementSystem"
+    id: 7,
+    title: "Gif-it-up",
+    description: "A fun side project — a GIF generator built with Spring Boot and Thymeleaf, letting users create and view custom GIFs right from the browser.",
+    image: "/projects/gifitup.png",
+    tags: ["spring-boot", "thymeleaf", "webapp"],
+    category: "Productivity Tools",
+    icon: <Zap className="w-5 h-5" />,
+    gradient: "from-purple-600 to-pink-600",
+    liveUrl: "gif-it-up-cslh.onrender.com/",
+    githubUrl: "https://github.com/Anmol283/Gif-it-up"
   },
   {
-    id: 5,
+    id: 8,
     title: "OptiFlow",
     description: "A smart task manager with real-time syncing, modern UI, and seamless flow.",
     image: "/projects/optiflow.png", // Fixed path
     tags: ["reactjs", "firebase-auth", "three-js"],
     category: "Productivity Tools",
-    icon: <Database className="w-5 h-5" />,
+    icon: <Zap className="w-5 h-5" />,
     gradient: "from-purple-600 to-pink-600",
     liveUrl: "https://opti-flow-self.vercel.app",
     githubUrl: "https://github.com/Anmol283/OptiFlow"
   },
   {
-    id: 6,
+    id: 9,
     title: "Digital Clock & Weather App",
     description: "Track time and weather instantly with a beautiful, minimal web UI.",
     image: "/projects/Digital_clock_and_weather.png", // Fixed path
     tags: ["node-js", "open-weather-api"],
     category: "Frontend & API",
-    icon: <Smartphone className="w-5 h-5" />,
+    icon: <Globe className="w-5 h-5" />,
     gradient: "from-cyan-600 to-blue-600",
     liveUrl: "https://anmol283.github.io/Digital-clock-and-Weather-App/",
     githubUrl: "https://github.com/Anmol283/Digital-clock-and-Weather-App"
   },
   {
-    id: 7,
+    id: 10,
     title: "Library Management System",
     description: "Efficiently manage physical & digital books with DevOps best practices.",
     image: "/projects/LMS.png", // Fixed path
     tags: ["c++","CLI"],
     category: "C++ & CLI",
-    icon: <Zap className="w-5 h-5" />,
+    icon: <Database className="w-5 h-5" />,
     gradient: "from-yellow-600 to-orange-600",
-    liveUrl: "#",
+    // liveUrl: "#",
     githubUrl: "https://github.com/Anmol283/Library_Management_System_Cpp"
   },
   
 ];
-
   const itemsPerView = 3;
   const maxIndex = Math.max(0, projects.length - itemsPerView);
 

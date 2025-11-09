@@ -16,10 +16,11 @@ export default function Achievements() {
       icon: "🧩",
       title: "Consistent Coding Journey",
       description:
-       "Proved consistency with 50 days of daily LeetCode in 2024 & 2025. Gearing up for the 100-day streak!",
+       "Solved 350+ LeetCode problems and earned 4+ achievement badges",
       image: [
-        "/achievements/leetcode.png",
-        "/achievements/leetcode_2025.png"
+        "/achievements/25_100.gif",
+        "/achievements/25_50.gif",
+        "/achievements/24_50.gif"
       ],
     },
     {
@@ -92,7 +93,7 @@ export default function Achievements() {
                       key={i}
                       src={img}
                       alt={`${ach.title} - ${i + 1}`}
-                      className="w-full md:w-[48%] h-auto rounded-2xl object-cover shadow-lg transition-transform duration-300"
+                      className="w-[45%] md:w-[30%] h-auto rounded-2xl object-cover shadow-lg transition-transform duration-300"
                     />
                   ))
                 ) : (

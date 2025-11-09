@@ -30,7 +30,6 @@ export default function Contact() {
         },
         (error) => {
           setStatusMessage("❌ Failed to send message. Please try again.");
-          console.error("EmailJS Error:", error);
         }
       )
       .finally(() => setIsSending(false));

@@ -1,5 +1,5 @@
 'use client';
-import { Github, Linkedin, ChevronDown, Code, Terminal } from 'lucide-react';
+import { Github, Linkedin, ChevronDown, Code, Terminal, FileText } from 'lucide-react';
 import SectionBackground from './SectionBackground';
 
 export default function Home() {
@@ -68,6 +68,17 @@ export default function Home() {
           >
             <Linkedin className="h-5 w-5 mr-2 text-white transition-transform duration-300 group-hover:scale-110" />
             <span className="relative z-10">LinkedIn</span>
+            <span className="absolute inset-0 bg-gradient-to-r from-pink-400/20 to-indigo-400/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+          </a>
+
+          <a
+            href="/Anmol_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center overflow-hidden rounded-full px-6 py-3 bg-gradient-to-r from-gray-800 to-gray-900 text-white shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          >
+            <FileText className="h-5 w-5 mr-2 text-white transition-transform duration-300 group-hover:translate-y-[-2px]" />
+            <span className="relative z-10">Resume</span>
             <span className="absolute inset-0 bg-gradient-to-r from-pink-400/20 to-indigo-400/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
           </a>
         </div>

@@ -96,6 +96,46 @@ const Progress = () => {
       borderColor: "border-indigo-400",
       position: { x: 70, y: 20 },
       description: "Java used in PMS, C++ used in LMS"
+    },
+    {
+      id: 10,
+      name: "Spring Boot",
+      projects: 1,
+      category: "Framework",
+      color: "from-green-600 to-green-700",
+      borderColor: "border-green-400",
+      position: { x: 35, y: 25 },
+      description: "Used in e-commerce mini store"
+    },
+    {
+      id: 11,
+      name: "Cloud",
+      projects: 1,
+      category: "Infrastructure",
+      color: "from-sky-400 to-blue-500",
+      borderColor: "border-sky-400",
+      position: { x: 85, y: 50 },
+      description: "Cloud computing and deployment"
+    },
+    {
+      id: 12,
+      name: "AWS",
+      projects: 1,
+      category: "Cloud Platform",
+      color: "from-orange-500 to-amber-600",
+      borderColor: "border-orange-400",
+      position: { x: 40, y: 85 },
+      description: "Amazon Web Services cloud platform"
+    },
+    {
+      id: 13,
+      name: "Bash",
+      projects: 1,
+      category: "Scripting",
+      color: "from-gray-600 to-slate-700",
+      borderColor: "border-gray-500",
+      position: { x: 10, y: 15 },
+      description: "Clean space dashboard"
     }
   ];
 
@@ -139,7 +179,11 @@ const Progress = () => {
               <line x1="75%" y1="35%" x2="80%" y2="65%" stroke="rgba(59, 130, 246, 0.3)" strokeWidth="1" strokeDasharray="2,2" />
               <line x1="15%" y1="50%" x2="25%" y2="70%" stroke="rgba(34, 197, 94, 0.3)" strokeWidth="1" strokeDasharray="2,2" />
               <line x1="25%" y1="70%" x2="45%" y2="60%" stroke="rgba(34, 197, 94, 0.3)" strokeWidth="1" strokeDasharray="2,2" />
-              <line x1="45%" y1="60%" x2="65%" y2="75%" stroke="rgba(34, 197, 94, 0.3)" strokeWidth="1" strokeDasharray="2,2" />
+              <line x1="45%" y1="60%" x2="60%" y2="75%" stroke="rgba(34, 197, 94, 0.3)" strokeWidth="1" strokeDasharray="2,2" />
+              <line x1="35%" y1="25%" x2="50%" y2="20%" stroke="rgba(34, 197, 94, 0.3)" strokeWidth="1" strokeDasharray="2,2" />
+              <line x1="85%" y1="50%" x2="80%" y2="65%" stroke="rgba(251, 146, 60, 0.3)" strokeWidth="1" strokeDasharray="2,2" />
+              <line x1="40%" y1="85%" x2="60%" y2="75%" stroke="rgba(251, 146, 60, 0.3)" strokeWidth="1" strokeDasharray="2,2" />
+              <line x1="10%" y1="15%" x2="20%" y2="30%" stroke="rgba(148, 163, 184, 0.3)" strokeWidth="1" strokeDasharray="2,2" />
             </svg>
 
             {techStack.map((tech) => (

@@ -16,3 +16,14 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+/* Add this at the top or bottom of your globals.css */
+* {
+  cursor: none !important;
+}
+
+/* Optional: Show default cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  * {
+    cursor: auto !important;
+  }
+}

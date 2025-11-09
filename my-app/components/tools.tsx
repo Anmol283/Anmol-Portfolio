@@ -4,31 +4,41 @@ import { Github, Linkedin, Code, Server, Database, GitBranch } from "lucide-reac
 import SectionBackground from "./SectionBackground";
 
 const journeyData = [
+{
+  title: 'Frontend Technologies',
+  description: 'Crafting modern, responsive user interfaces with a focus on performance and accessibility.',
+  icon: <Code className="h-8 w-8 text-blue-400" />,
+  color: 'blue',
+  skills: [
+    { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white' },
+    { name: 'React', icon: 'https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB' },
+    { name: 'HTML5', icon: 'https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white' },
+    { name: 'CSS3', icon: 'https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white' },
+    { name: 'TailwindCSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white' },
+    { name: 'TypeScript', icon: 'https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white' },
+    { name: 'Bootstrap', icon: 'https://img.shields.io/badge/Bootstrap-%237952B3.svg?style=for-the-badge&logo=bootstrap&logoColor=white' },
+    { name: 'Three.js', icon: 'https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js&logoColor=white' },
+    { name: 'Lucide React', icon: 'https://img.shields.io/badge/Lucide-React-000000?style=for-the-badge&logo=lucide&logoColor=white' },
+  ],
+},
+
   {
-    title: 'Frontend Technologies',
-    description: 'Crafting modern, responsive user interfaces with a focus on performance and accessibility.',
-    icon: <Code className="h-8 w-8 text-blue-400" />,
-    color: 'blue',
-    skills: [
-      { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white' },
-      { name: 'React', icon: 'https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB' },
-      { name: 'HTML5', icon: 'https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white' },
-      { name: 'CSS3', icon: 'https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white' },
-      { name: 'TailwindCSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white' },
-      { name: 'TypeScript', icon: 'https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white' },
-      { name: 'Bootstrap', icon: 'https://img.shields.io/badge/Bootstrap-%237952B3.svg?style=for-the-badge&logo=bootstrap&logoColor=white' },
-    ],
-  },
-  {
-    title: 'Backend Technologies',
-    description: 'Building scalable and secure backend systems to power dynamic applications.',
+    title: 'Backend & Databases',
+    description: 'Building scalable, secure, and cloud-ready backend systems with robust data handling.',
     icon: <Server className="h-8 w-8 text-green-400" />,
     color: 'green',
     skills: [
+      { name: 'Spring Boot', icon: 'https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white' },
       { name: 'Node.js', icon: 'https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white' },
       { name: 'Express.js', icon: 'https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB' },
+      { name: 'MySQL', icon: 'https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white' },
+      { name: 'PostgreSQL', icon: 'https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white' },
+      { name: 'MariaDB', icon: 'https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white' },
       { name: 'MongoDB', icon: 'https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white' },
+      { name: 'Redis', icon: 'https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white' },
       { name: 'REST APIs', icon: 'https://img.shields.io/badge/REST_APIs-000000?style=for-the-badge&logo=rest&logoColor=white' },
+      { name: 'Microservices', icon: 'https://img.shields.io/badge/Microservices-FF6F00?style=for-the-badge&logo=architectural-design&logoColor=white' },
+      { name: 'Cloud & AWS', icon: 'https://img.shields.io/badge/AWS_Cloud-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white' },
     ],
   },
   {
@@ -46,18 +56,21 @@ const journeyData = [
   },
   {
     title: 'Core Fundamentals',
-    description: 'Mastering the foundations of software development for robust solutions.',
+    description: 'Mastering the foundations of software engineering and system-level understanding for robust solutions.',
     icon: <GitBranch className="h-8 w-8 text-orange-400" />,
     color: 'orange',
     skills: [
       { name: 'OOPS', icon: 'https://img.shields.io/badge/OOP-000000?style=for-the-badge&logo=code&logoColor=white' },
       { name: 'Operating Systems', icon: 'https://img.shields.io/badge/Operating_Systems-000000?style=for-the-badge&logo=linux&logoColor=white' },
+      { name: 'Linux', icon: 'https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black' },
       { name: 'Version Control', icon: 'https://img.shields.io/badge/Version_Control-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white' },
       { name: 'Computer Networks', icon: 'https://img.shields.io/badge/Computer%20Networking-%23007ACC.svg?style=for-the-badge&logo=cloudflare&logoColor=white' },
       { name: 'Object Oriented Software Engineering', icon: 'https://img.shields.io/badge/Object%20Oriented%20Software%20Engineering-%236A5ACD.svg?style=for-the-badge&logo=abstract&logoColor=white' },
+      { name: 'System Design', icon: 'https://img.shields.io/badge/System_Design-1E90FF?style=for-the-badge&logo=diagram&logoColor=white' },
     ],
   },
 ];
+
 
 export default function Tools(){
   return(
@@ -79,10 +92,10 @@ export default function Tools(){
       {/* Stats Row - Redesigned with glassmorphism */}
   <div className="flex flex-wrap justify-center gap-8 px-4 mb-16">
   {[
-    { label: 'Learning Hours', value: '1200+', textColor: 'text-indigo-400' },
-    { label: 'Projects Built', value: '7+', textColor: 'text-pink-400' },
-    { label: 'Leetcode Questions', value: '150+', textColor: 'text-green-400' },
-    { label: 'Technologies Learnt', value: '10+', textColor: 'text-yellow-400' },
+    { label: 'Learning Hours', value: '2000+', textColor: 'text-indigo-400' },
+    { label: 'Projects Built', value: '10+', textColor: 'text-pink-400' },
+    { label: 'Leetcode Questions', value: '350+', textColor: 'text-green-400' },
+    { label: 'Technologies Learnt', value: '20+', textColor: 'text-yellow-400' },
   ].map((stat, index) => (
     <div
       key={index}
@@ -119,7 +132,7 @@ export default function Tools(){
                 </p>
               </div>
               
-              <div className="flex flex-wrap gap-2 justify-center pt-4 border-t border-gray-700/30">
+              <div className="flex flex-wrap gap-2 justify-center content-start pt-4 border-t border-gray-700/30">
                 {item.skills.map((skill, idx) => (
                   <img
                     key={idx}
