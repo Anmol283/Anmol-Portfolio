@@ -1,9 +1,15 @@
 "use client";
 import { motion } from "framer-motion";
-import SectionBackground from './SectionBackground'
 import { Award } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export default function Achievements() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const achievements = [
     {
       icon: "🎓",
@@ -20,7 +26,8 @@ export default function Achievements() {
       image: [
         "/achievements/25_100.gif",
         "/achievements/25_50.gif",
-        "/achievements/24_50.gif"
+        "/achievements/24_50.gif",
+        "/achievements/25_200.gif"
       ],
     },
     {
@@ -32,27 +39,32 @@ export default function Achievements() {
     },
   ];
 
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <section id="achievements" className="relative bg-black/90 text-white py-20 px-4 overflow-hidden">
-  <SectionBackground />
-  <div className="relative z-10 max-w-6xl mx-auto">
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        className="flex items-center justify-center mb-6"
-      >
-        <Award className="h-8 w-8 text-pink-300 mr-3" />
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-purple-400">
-           Achievements
-         </h2>
-      </motion.div>
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-cyan-900/20" />
+      
+      <div className="relative z-10 max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex items-center justify-center mb-6"
+        >
+          <Award className="h-8 w-8 text-pink-300 mr-3" />
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-purple-400">
+            Achievements
+          </h2>
+        </motion.div>
 
         <p className="text-center text-gray-400 text-lg mt-4 mb-16">
-              Highlights of dedication and growth.
+          Highlights of dedication and growth.
         </p>
-
 
         <div className="space-y-28">
           {achievements.map((ach, index) => (
@@ -81,7 +93,7 @@ export default function Achievements() {
 
               {/* Right: Images (Single or Multiple) */}
               <motion.div
-                className="flex gap-4 justify-center flex-wrap"
+                className="flex gap-4 justify-center"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -93,7 +105,7 @@ export default function Achievements() {
                       key={i}
                       src={img}
                       alt={`${ach.title} - ${i + 1}`}
-                      className="w-[45%] md:w-[30%] h-auto rounded-2xl object-cover shadow-lg transition-transform duration-300"
+                      className="w-[22%] md:w-[22%] h-auto rounded-2xl object-cover shadow-lg transition-transform duration-300"
                     />
                   ))
                 ) : (
