@@ -37,7 +37,7 @@ const projects = [
     icon: <Database className="w-5 h-5" />,
     gradient: "from-blue-600 to-purple-600",
     liveUrl: "https://be-elararegency.onrender.com",
-    githubUrl: "https://github.com/Anmol283/BE_ElaraRegency"
+    githubUrl: "https://elararegency-anmol.onrender.com/"
   },
   {
     id: 3,
