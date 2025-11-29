@@ -36,8 +36,8 @@ const projects = [
     category: "Full Stack",
     icon: <Database className="w-5 h-5" />,
     gradient: "from-blue-600 to-purple-600",
-    liveUrl: "https://be-elararegency.onrender.com",
-    githubUrl: "https://elararegency-anmol.onrender.com/"
+    liveUrl: "https://elararegency-anmol.onrender.com/",
+    githubUrl: "https://github.com/Anmol283/BE_ElaraRegency"
   },
   {
     id: 3,
