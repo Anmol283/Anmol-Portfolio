@@ -50,9 +50,22 @@ const projects = [
     gradient: "from-blue-600 to-purple-600",
     // liveUrl: "#", 
     githubUrl: "https://github.com/Anmol283/E-commerceMiniStore"
-  },   
+  }, 
   {
     id: 4,
+    title: "Event Sphere",
+    description:
+      "Full-stack event discovery and management platform with real-time updates, secure authentication, cloud database integration, and organizer tools for seamless event handling.",
+    image: "/projects/eventsphere.png", // update with your actual image path
+    tags: ["nodejs", "express", "ejs", "mongodb", "websockets", "jwt", "redis"],
+    category: "Web Applications",
+    icon: <Code2 className="w-5 h-5" />,
+    gradient: "from-rose-600 to-orange-500",
+    liveUrl: "https://eventsphere-anmol.onrender.com/", // replace with Render or Beanstalk URL
+    githubUrl: "https://github.com/Anmol283/EventSphere"
+  },
+  {
+    id: 5,
     title: "Clean Space Dashboard",
     description: "Terminal-based file organizer and disk monitor with dialog UI, alerts, and real-time stats for Linux users.",
     image: "/projects/csd.jpeg", // needs change
@@ -64,7 +77,7 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/Clean-Space-Dashboard-Linux"
   },
   {
-    id: 5,
+    id: 6,
     title: "Playlist Management System",
     description: "Console-based Java app to create, edit, and manage your music playlists.",
     image: "/projects/PMS.png", // Fixed path
@@ -76,7 +89,7 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/PlaylistManagementSystem"
   },
    {
-    id: 6,
+    id: 7,
     title: "PolyVerse - A Translator App",
     description: "Translate across 12+ languages with smart history and a sleek dark UI.",
     image: "/projects/polyverse.png", // Fixed path
@@ -88,7 +101,7 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/PolyVerse-A-translator-app"
   },
   {
-    id: 7,
+    id: 8,
     title: "Gif-it-up",
     description: "A fun side project — a GIF generator built with Spring Boot and Thymeleaf, letting users create and view custom GIFs right from the browser.",
     image: "/projects/gifitup.png",
@@ -100,7 +113,7 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/Gif-it-up"
   },
   {
-    id: 8,
+    id: 9,
     title: "OptiFlow",
     description: "A smart task manager with real-time syncing, modern UI, and seamless flow.",
     image: "/projects/optiflow.png", // Fixed path
@@ -112,7 +125,7 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/OptiFlow"
   },
   {
-    id: 9,
+    id: 10,
     title: "Digital Clock & Weather App",
     description: "Track time and weather instantly with a beautiful, minimal web UI.",
     image: "/projects/Digital_clock_and_weather.png", // Fixed path
@@ -124,7 +137,7 @@ const projects = [
     githubUrl: "https://github.com/Anmol283/Digital-clock-and-Weather-App"
   },
   {
-    id: 10,
+    id: 11,
     title: "Library Management System",
     description: "Efficiently manage physical & digital books with DevOps best practices.",
     image: "/projects/LMS.png", // Fixed path

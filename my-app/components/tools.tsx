@@ -93,7 +93,7 @@ export default function Tools(){
   <div className="flex flex-wrap justify-center gap-8 px-4 mb-16">
   {[
     { label: 'Learning Hours', value: '2000+', textColor: 'text-indigo-400' },
-    { label: 'Projects Built', value: '10+', textColor: 'text-pink-400' },
+    { label: 'Projects Built', value: '11+', textColor: 'text-pink-400' },
     { label: 'Leetcode Questions', value: '350+', textColor: 'text-green-400' },
     { label: 'Technologies Learnt', value: '20+', textColor: 'text-yellow-400' },
   ].map((stat, index) => (
